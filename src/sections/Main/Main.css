@@ -1,0 +1,135 @@
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-img{
+    position: relative;
+}
+
+.main-img img{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    z-index: 2;
+}
+
+.main-img::after{
+    content:'';
+    display: block;
+    position: absolute;
+    left: 48%;
+    top: 55%;
+    width: 80%;
+    height: 80%; 
+    transform: translate(-50%, -50%);
+    background-color: var(--primary-300);
+    border-radius: 74% 26% 34% 66% / 60% 74% 26% 40% ;
+    z-index: 1;
+}
+
+.main-title{
+    text-align: start;
+}
+.main-title span{
+    color: var(--text-200);
+    opacity: 0.9;
+    font-size: 25px;
+}
+.main-title h1{
+    color: var(--text-100);
+    font-size: 70px;
+    width: 300px;
+}
+
+.main-data{
+    text-align: end;
+    padding: 2rem 0;
+}
+
+.main-data p{
+    font-size: 20px;
+    width: 270px;
+    color: var(--text-100);
+    opacity: .5;
+}
+.main-data button{
+    padding: 10px;
+    margin-top: 2rem;
+}
+
+
+@media (max-width: 1024px) {
+    .main-title h1{
+        font-size: 45px;
+    }
+
+    .main-title span{
+        font-size: 20px;
+    }
+
+    .main-data p{
+        font-size: 15px;
+    }
+
+    .main-img img{
+        width: 250px;
+        height: 250px;
+    }
+
+}
+
+@media (max-width: 935px) {
+
+    .main-title h1{
+        width: 200px;
+        font-size: 40px;
+    }
+
+    .main-img img{
+        width: 225px;
+        height: 225px;
+    }
+
+}
+
+@media (max-width: 840px) {
+
+    .main-container{
+        flex-direction: column;
+    }
+
+    .main-title,
+    .main-data{
+        text-align: center;
+    }
+
+    .main-title h1{
+        font-size: 60px;
+        width: 100%;
+    }
+
+    .main-title span{
+        font-size: 25px;
+    }
+
+    .main-img img{
+        width: 275px;
+        height: 275px;
+        margin: 1.5rem 0;
+    }
+
+    .main-data p{
+        width: 400px;
+        font-size: 25px;
+    }
+
+}
+
+@media (max-width:500px){
+    .main-data p{
+        width: 320px;
+        font-size: 20px;
+    }
+}

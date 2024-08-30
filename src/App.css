@@ -1,38 +1,92 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "New Amsterdam", sans-serif;
+  transition: ease-in .5s;
+}
+
+:root{
+  --primary-100:#2C3A4F;
+  --primary-200:#56647b;
+  --primary-300:#8ba3cf;
+  --accent-100:#FF4D4D;
+  --accent-200:#c6a4a4;
+  --text-100:#FFFFFF;
+  --text-200:#7f7f7f;
+  --bg-100:#1A1F2B;
+  --bg-200:#292e3b;
+  --bg-300:#414654;
+    
+}
+
+.light-theme {
+  --primary-100:#2C3A4F;
+  --primary-200:#56647b;
+  --primary-300:#a1b5da;
+  --accent-100:#FF4D4D;
+  --accent-200:#c6a4a4;
+  --text-100:#1E2022;
+  --text-200:#52616B;
+  --bg-100:#ffffff;
+  --bg-200:#d3d6e5;
+  --bg-300:#bfc7d1;
+}
+
+.App{
+  background-color: var(--bg-200);
+}
+p, ul li, button{
+  font-family: "Work Sans", sans-serif;
+}
+
+ul li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+h2{
+  font-size: 35px;
+  color: var(--text-100);
+  font-weight: 600;
+}
+
+h3{
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--primary-300);
+}
+
+.container {
   text-align: center;
+  padding: 3rem 5rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container h2{
+  font-size: 45px;
+  padding: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 800px) {
+  .container {
+    padding: 3rem 4rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 560px) {
+  .container h2 {
+    font-size: 38px;
+    padding: 1rem 0;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 400px) {
+  .container {
+    padding: 3rem;
   }
 }
