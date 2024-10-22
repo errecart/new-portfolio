@@ -32,7 +32,9 @@ const NavBar = () => {
         className="icon-color"
       />
       <div className="navBar-container">
-        <h2>Portfolio</h2>
+        <a href="#main" onClick={closeMenu}>
+          <h2>Portfolio</h2>
+        </a>
         <div className={`nav-list ${showMenu ? "show" : ""}`} on>
           <FontAwesomeIcon icon={faX} className="icon-x" onClick={closeMenu} />
           <ul>

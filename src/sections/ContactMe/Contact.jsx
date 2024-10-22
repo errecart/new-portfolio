@@ -77,13 +77,13 @@ const Contact = () => {
           <h3>Send me and Email</h3>
           <form ref={form} onSubmit={sendEmail}>
             <label>Full-Name</label>
-            <input type="text" name="user_name"/>
+            <input type="text" name="user_name" required/>
             <label>Topic</label>
-            <input type="text" name="user_subject"/>
+            <input type="text" name="user_subject" required/>
             <label>Email</label>
-            <input type="email" name="email"/>
+            <input type="email" name="email" required/>
             <label>Message</label>
-            <textarea name="message"></textarea>
+            <textarea name="message" required></textarea>
             <button type="submit">Send</button>
           </form>
         </div>

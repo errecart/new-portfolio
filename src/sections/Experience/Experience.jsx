@@ -7,20 +7,20 @@ const Experience = () => {
       id: 1,
       title: "GETOUT STUDIO",
       text: "creation of the page to video game studio",
-      image: "/assets/image/PEPOLA.jpg",
+      image: "assets/image/PEPOLA.jpg",
       categories: ["React", "CSS", "JavaScript"],
     },
     {
       id: 2,
       title: "TEGANEDEMANO",
-      image: "/assets/image/TRUCO.jpg",
+      image: "assets/image/TRUCO.jpg",
       text: "Creaction of a App to make truco tournoments",
       categories: ["Next.js", "CSS", "JavaScript"],
     },
     {
       id: 3,
       title: "PEPOLA",
-      image: "/assets/image//PEPOLA.jpg",
+      image: "assets/image//PEPOLA.jpg",
       text: "Creation of the page to video game studio",
       categories: ["React", "CSS", "JavaScript"],
     },
@@ -42,7 +42,7 @@ const Experience = () => {
                 <div className="item-data">
                   <h4>{e.title}</h4>
                   <p>{e.text}</p>
-                  <span>{e.categories.join("-")}</span>
+                  <span>{e.categories.join(" - ")}</span>
                 </div>
               </div>
             ))}

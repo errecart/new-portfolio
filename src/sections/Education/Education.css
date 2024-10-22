@@ -92,23 +92,28 @@
 }
 
 @media (max-width: 515px) {
-  .knowledge-container{
-      flex-direction: column;
+  .knowledge-container {
+    flex-direction: column;
   }
 
-  .education h3{
+  .item,
+  .item-new {
+    margin: 1rem 0;
+  }
+
+  .education h3 {
     text-align: center;
   }
 
-  .education-main{
-      justify-content: center;
-  }
-
-  .education-newC{
+  .education-main {
     justify-content: center;
   }
 
-  .skills{
+  .education-newC {
+    justify-content: center;
+  }
+
+  .skills {
     text-align: center;
     display: flex;
     flex-direction: column;
