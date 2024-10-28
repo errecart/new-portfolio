@@ -1,119 +1,128 @@
-.container2{
-    display: flex;
-    align-items: start;
+.container2 {
+  display: flex;
+  align-items: start;
 }
 
-.experience h3{
-    text-align: start;
+.experience h3 {
+  text-align: start;
 }
 
-.experience-container{
-    display: flex;
-    align-items: center;
+.experience-container {
+  display: flex;
+  align-items: center;
 }
 
-.item-e{
-    width: 325px;
-    height: 200px;
-    background-size: cover;
-    margin: 1rem 1rem 1rem 0;
-    border-image: fill 0 linear-gradient(#0001, #000);
-    display: flex;
-    justify-content: flex-end;
+.item-e {
+  width: 325px;
+  height: 200px;
+  background-size: cover;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+  border-image: fill 0 linear-gradient(#0001, #000);
+  display: flex;
+  justify-content: flex-end;
 }
 
-.item-data{
-    background-color:var(--bg-100);
-    opacity: 0.9;
-    padding: 20px 5px 0 10px;
-    width: 175px;
-    text-align: end;
+.item-data {
+  background-color: var(--bg-100);
+  opacity: 0.9;
+  padding: 20px 5px 0 10px;
+  width: 175px;
+  text-align: end;
 }
 
-.item-data h4{
-    font-size: 20px;
-    letter-spacing: 2px;
-    color: var(--text-100);
+.item-data h4 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: var(--text-100);
 }
 
-.item-data p{
-    text-align: end;
-    font-size: 16px;
-    padding: .5rem 0;
-    color: var(--text-100);
+.item-data p {
+  text-align: end;
+  font-size: 16px;
+  padding: 0.5rem 0;
+  color: var(--text-100);
 }
 
-.item-data span{
-    padding: .5rem 0;
-    color: var(--accent-100);
+.item-data span {
+  padding: 0.5rem 0;
+  color: var(--accent-100);
 }
 
-.someProjects{
-    text-align: start;
-    padding: 0 2rem;
+.someProjects {
+  text-align: start;
+  padding: 0 2rem;
 }
 
-.someProjects-container span{
-    padding-top: 4rem;
-    color: var(--accent-100);
-    font-size: 12px;
+.someProjects-container span {
+  padding-top: 4rem;
+  color: var(--accent-100);
+  font-size: 12px;
 }
 
-.someProjects-container ul{
-    padding: 1rem 0;
+.someProjects-container ul {
+  padding: 1rem 0;
 }
 
-.someProjects-container ul li{
-    padding: .5rem 0;
-    cursor: pointer;
-    color: var(--text-100);
-    font-weight: 500;
+.someProjects-container ul li {
+  padding: 0.5rem 0;
+  cursor: pointer;
+  color: var(--text-100);
+  font-weight: 500;
 }
 
 .someProjects-container ul li:before {
-    content: "urt";
-    display: inline-block;
-    padding: 5px;
+  content: ">";
+  display: inline-block;
+  padding: 5px;
 }
 
-@media (max-width: 1440px){
-    .experience-container{
-        flex-wrap: wrap;
-    }
+@media (max-width: 1440px) {
+  .experience-container {
+    flex-wrap: wrap;
+  }
 }
 
-  @media (max-width: 1024px) {
-    .item-e {
-        width: 260px;
-    }
+@media (max-width: 1024px) {
+  .item-e {
+    width: 260px;
+  }
+}
+
+
+@media (max-width: 890px) {
+  .item-e {
+    width: 425px;
   }
 
-  @media (max-width: 800px) {
-    .item-e{
-        width: 270px;
-    }
+  .someProjects {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .container2 {
+    align-items: center;
+    flex-direction: column;
+  }
+  .experience-container {
+    justify-content: center;
+    padding: 1.5rem 0;
+  }
+  .experience h3 {
+    text-align: center;
   }
 
-  @media (max-width: 515px) {
-    .container2{
-        flex-direction: column;
-    }
-
-    .experience-container{
-        justify-content: center;
-    }
-
-    .experience h3{
-        text-align: center;
-    }
-
-    .someProjects{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        padding: 2rem;
-        width: 100%;
-    }
+  .someProjects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
+}
 
+@media (max-width: 515px) {
+  .someProjects {
+    padding: 2rem;
+    width: 100%;
+  }
+}
