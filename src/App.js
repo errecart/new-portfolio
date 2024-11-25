@@ -1,5 +1,5 @@
 import './App.css';
-import NavBar from './navBar/NavBar';
+import NavBar from "./components/navBar/NavBar";
 import Contact from './sections/ContactMe/Contact';
 import Education from './sections/Education/Education';
 import Experience from './sections/Experience/Experience';
