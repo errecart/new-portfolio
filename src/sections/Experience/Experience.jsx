@@ -7,55 +7,58 @@ const Experience = () => {
       id: 1,
       title: "GETOUT STUDIO",
       text: "creation of the page to video game studio",
-      image: "assets/image/PEPOLA.jpg",
-      categories: ["React", "CSS", "JavaScript"],
+      image: "assets/image/GETOUT.jpg",
+      link:"https://getout-studio.com",
+      categories: ["React", "CSS", "JavaScript" ,"Tailwind", "Figma", "API"],
     },
     {
       id: 2,
-      title: "TEGANEDEMANO",
-      image: "assets/image/TRUCO.jpg",
+      title: "Visdan Agnecy",
+      image: "assets/image/VISDAN.png",
       text: "Creaction of a App to make truco tournoments",
-      categories: ["Next.js", "CSS", "JavaScript"],
+      link:"https://www.visdan.agency",
+      categories: ["Next.js", "CSS", "JavaScript", "Figma", "Node.js"],
     },
     {
       id: 3,
       title: "PEPOLA",
-      image: "assets/image//PEPOLA.jpg",
+      image: "assets/image/PEPOLA.jpg",
       text: "Creation of the page to video game studio",
-      categories: ["React", "CSS", "JavaScript"],
+      link:"https://pepola.in",
+      categories: ["React", "CSS", "JavaScript", "API"],
     },
   ];
 
   return (
     <div className="container" id="experience">
       <h2>Experience</h2>
-      <div className="container2">
         <div className="experience">
-          <h3>Works</h3>
           <div className="experience-container">
             {experience.map((e) => (
-              <div
-                className="item-e"
-                key={e.id}
-                style={{ backgroundImage: `url(${e.image})` }}
-              >
-                <div className="item-data">
-                  <h4>{e.title}</h4>
-                  <p>{e.text}</p>
-                  <span>{e.categories.join(" - ")}</span>
+              <div className="item-e" key={e.id}>
+                <a href={e.link} target="_blanck"><img src={e.image} alt="" /></a>
+                <h4>{e.title}</h4>
+                <p>{e.text}</p>
+                <div style={{ display: "flex", flexWrap:"wrap", alignItems: "center", justifyContent: "center" }}>
+                  {e.categories.map((category, index) => (
+                    <span key={index} className="category">
+                      {category}
+                    </span>
+                  ))}
                 </div>
               </div>
             ))}
           </div>
         </div>
         <div className="someProjects">
-          <h3>Some Projects</h3>
+          <h2>Some Projects</h2>
           <div className="someProjects-container">
-            <span>There are also some final projects from my studies</span>
+            <span>There are also some final projects from my studies and self creation</span>
             <ul>
               <a
                 href="https://errecart.github.io/ImagineDragons-myProject/"
                 target="_blanck"
+                className="projects"
               >
                 {" "}
                 <li>Imagine Dragons Fanbase</li>
@@ -63,19 +66,20 @@ const Experience = () => {
               <a
                 href="https://errecart.github.io/ecommerce--project/build"
                 target="_blanck"
+                className="projects"
               >
                 <li>E-commerce</li>
               </a>
               <a
                 href="https://errecart.github.io/portfolio-web/"
                 target="_blanck"
+                className="projects"
               >
                 <li>Last Portfolio</li>
               </a>
             </ul>
           </div>
         </div>
-      </div>
     </div>
   );
 };

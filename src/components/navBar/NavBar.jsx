@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import "./NavBar.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faMoon, faSun, faX } from "@fortawesome/free-solid-svg-icons";
 
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -26,17 +24,13 @@ const NavBar = () => {
 
   return (
     <div className="navBar">
-      <FontAwesomeIcon
-        icon={isDarkMode ? faMoon : faSun}
-        onClick={toggleTheme}
-        className="icon-color"
-      />
+      <img src={isDarkMode ? "assets/icons/navBar/moon.svg" : "assets/icons/navBar/sun.svg"} alt="color change icons" onClick={toggleTheme} className="icon-color"/>
       <div className="navBar-container">
         <a href="#main" onClick={closeMenu}>
           <h2>Portfolio</h2>
         </a>
         <div className={`nav-list ${showMenu ? "show" : ""}`} on>
-          <FontAwesomeIcon icon={faX} className="icon-x" onClick={closeMenu} />
+          <img src="assets/icons/navBar/cross.svg" className="icon-x" onClick={closeMenu} alt="close icon" />
           <ul>
             <a href="#main" onClick={closeMenu}>
               <li>Home</li>
@@ -52,8 +46,9 @@ const NavBar = () => {
             </a>
           </ul>
         </div>
-        <FontAwesomeIcon icon={faBars} className="icon" onClick={btnMenu} />
+        <img src="assets/icons/navBar/bars.svg" className="icon" onClick={btnMenu} alt="open menu icon" />
       </div>
+      <button className="changeLan">En</button>
     </div>
   );
 };
