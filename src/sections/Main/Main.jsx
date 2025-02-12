@@ -14,7 +14,7 @@ const Main = () => {
           <img src="assets/image/self.png" alt="my person"/>
         </div>
         <div className="main-data">
-          <p>Front-end Developer with experience developing responsive and interactive web applications Further, i'm familiar with HTML, CSS; JavaScript and some modern frameworks such as React</p>
+          <p>Front-end Developer with experience developing responsive and interactive web applications Further, i'm familiar with HTML, CSS; JavaScript and some modern frameworks such as React, Next.js and much more.</p>
           <a href="assets/CV/JuanIgnacioErrecartCV.pdf" download="Juan Ignacio Errecart CV"><button>Download CV</button></a>
         </div>
       </div>

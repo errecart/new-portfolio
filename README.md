@@ -68,19 +68,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-## Desarrollo Local
-
-Para ver los archivos multimedia (JPEG, PNG, SVG) mientras trabajas localmente, puedes usar `live-server`. Primero, instala `live-server` si no lo tienes:
-
-```sh
-npm install -g live-server
-```
-
-Luego, inicia el servidor de desarrollo local con el siguiente comando:
-
-```sh
-npm start
-```
-
-Esto abrirá tu proyecto en el navegador y podrás ver los archivos multimedia mientras haces cambios.

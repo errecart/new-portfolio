@@ -95,7 +95,7 @@ const Education = () => {
       <h2> Knowledge</h2>
       <div className="knowledge-container">
         {change.map((e) => (
-          <div className="knowledge-item" key={e.id} style={{ "--hover-color": e.color }}>
+          <div className="knowledge-item" key={e.id} style={{ "--hover-color": e.color, "--active-color": e.color }}>
             {e.state && <span className="new">{e.state}</span>}
             <img src={e.icon} alt={`${e.title} icon`} />
             <h4>{e.title}</h4>
