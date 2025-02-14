@@ -76,6 +76,9 @@
   .item-c {
     width: 140px;
     height: 140px;
+    a, span{
+      font-size: 12px;
+    }
   }
 
 }
