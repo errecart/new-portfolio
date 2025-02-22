@@ -64,13 +64,6 @@ const Experience = () => {
                 <li>Imagine Dragons Fanbase</li>
               </a>
               <a
-                href="https://errecart.github.io/ecommerce--project/build"
-                target="_blanck"
-                className="projects"
-              >
-                <li>E-commerce</li>
-              </a>
-              <a
                 href="https://errecart.github.io/portfolio-web/"
                 target="_blanck"
                 className="projects"
