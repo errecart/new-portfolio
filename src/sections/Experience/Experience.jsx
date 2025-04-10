@@ -10,14 +10,16 @@ const Experience = () => {
       image: "assets/image/GETOUT.jpg",
       link:"https://getout-studio.com",
       categories: ["React", "CSS", "JavaScript" ,"Tailwind", "Figma", "API"],
+      date: "2024",
     },
     {
       id: 2,
       title: "Visdan Agnecy",
       image: "assets/image/VISDAN.png",
-      text: "Creaction of a App to make truco tournoments",
+      text: "Frontend developer position for a digital marketing studio, also developing the studio's website",
       link:"https://www.visdan.agency",
       categories: ["Next.js", "CSS", "JavaScript", "Figma", "Node.js"],
+      date: "2024 - Present",
     },
     {
       id: 3,
@@ -25,7 +27,8 @@ const Experience = () => {
       image: "assets/image/PEPOLA.jpg",
       text: "Creation of the page to video game studio",
       link:"https://pepola.in",
-      categories: ["React", "CSS", "JavaScript", "API"],
+      categories: ["React", "CSS", "JavaScript"],
+      date: "2024",
     },
   ];
 
@@ -38,6 +41,7 @@ const Experience = () => {
               <div className="item-e" key={e.id}>
                 <a href={e.link} target="_blanck"><img src={e.image} alt="" /></a>
                 <h4>{e.title}</h4>
+                <span className="date">{e.date}</span>
                 <p>{e.text}</p>
                 <div style={{ display: "flex", flexWrap:"wrap", alignItems: "center", justifyContent: "center" }}>
                   {e.categories.map((category, index) => (
@@ -50,29 +54,7 @@ const Experience = () => {
             ))}
           </div>
         </div>
-        <div className="someProjects">
-          <h2>Some Projects</h2>
-          <div className="someProjects-container">
-            <span>There are also some final projects from my studies and self creation</span>
-            <ul>
-              <a
-                href="https://errecart.github.io/ImagineDragons-myProject/"
-                target="_blanck"
-                className="projects"
-              >
-                {" "}
-                <li>Imagine Dragons Fanbase</li>
-              </a>
-              <a
-                href="https://errecart.github.io/portfolio-web/"
-                target="_blanck"
-                className="projects"
-              >
-                <li>Last Portfolio</li>
-              </a>
-            </ul>
-          </div>
-        </div>
+
     </div>
   );
 };

@@ -43,34 +43,15 @@
         width: fit-content;
         cursor: pointer;
       }
+      .date{
+        font-size: 20px;
+        font-weight: 400;
+        padding: 2rem 0;
+        background: none;
+        border: none;
+        color: var(--text-100);
+      }
     }
   }
 
-}
-.someProjects-container{
-    span{
-        font-size: 1rem;
-        font-weight: 600;
-        letter-spacing: 1px;
-        color: var(--primary-100);
-        margin-bottom: 1rem;
-    }
-    ul {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin-top: .5rem;
-    
-        .projects {
-          background-color: var(--bg-100);
-          margin: 20px;
-          gap: 10px;
-          border-radius: 8px;
-          border: 2px solid var(--primary-200);
-          padding: 15px 0;
-          cursor: pointer;
-          width: 225px;
-          color: var(--accent-100);
-        }
-      }
 }

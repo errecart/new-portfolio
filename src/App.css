@@ -42,6 +42,7 @@
 .App{
   background-color: var(--bg-200);
 }
+
 p, ul li, button{
   font-family: "Work Sans", sans-serif;
 }
@@ -90,7 +91,7 @@ button{
 
 .container h2{
   font-size: 45px;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 @media (max-width: 800px) {
