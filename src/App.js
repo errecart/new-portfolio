@@ -1,18 +1,15 @@
 import './App.css';
 import NavBar from "./components/navBar/NavBar";
-import Contact from './sections/ContactMe/Contact';
-import Education from './sections/Education/Education';
-import Experience from './sections/Experience/Experience';
-import Main from './sections/Main/Main';
+import { Sidebar } from './components/sideBar/Sidebar';
+import Container from './sections/Container/Container';
+
 
 function App() {
   return (
     <div className="App">
+      <Sidebar/>
+      <Container/>
       <NavBar/>
-      <Main/>
-      <Education/>
-      <Experience/>
-      <Contact/>
     </div>
   );
 }

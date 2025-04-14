@@ -5,7 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "New Amsterdam", sans-serif;
-  transition: ease-in .5s;
+  transition: ease-in .3s;
   scroll-behavior: smooth;
 }
 

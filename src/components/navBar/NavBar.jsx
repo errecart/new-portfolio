@@ -1,54 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 import "./NavBar.css";
 
 const NavBar = () => {
-  const [showMenu, setShowMenu] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(true);
-
-  const toggleTheme = () => {
-    if (isDarkMode) {
-      document.body.classList.add("light-theme");
-    } else {
-      document.body.classList.remove("light-theme");
-    }
-    setIsDarkMode(!isDarkMode);
-  };
-
-  const btnMenu = () => {
-    setShowMenu(!showMenu);
-  };
-
-  const closeMenu = () => {
-    setShowMenu(false);
-  };
 
   return (
     <div className="navBar">
-      <img src={isDarkMode ? "assets/icons/navBar/moon.svg" : "assets/icons/navBar/sun.svg"} alt="color change icons" onClick={toggleTheme} className="icon-color"/>
-      <div className="navBar-container">
-        <a href="#main" onClick={closeMenu}>
-          <h2>Portfolio</h2>
-        </a>
-        <div className={`nav-list ${showMenu ? "show" : ""}`} on>
-          <img src="assets/icons/navBar/cross.svg" className="icon-x" onClick={closeMenu} alt="close icon" />
-          <ul>
-            <a href="#main" onClick={closeMenu}>
-              <li>Home</li>
-            </a>
-            <a href="#education" onClick={closeMenu}>
-              <li>Education</li>
-            </a>
-            <a href="#experience" onClick={closeMenu}>
-              <li>Experience</li>
-            </a>
-            <a href="#contact" onClick={closeMenu}>
-              <li>Contact</li>
-            </a>
-          </ul>
-        </div>
-        <img src="assets/icons/navBar/bars.svg" className="icon" onClick={btnMenu} alt="open menu icon" />
+      <div className="navbar-container">
+        <ul className="navbar-items">
+          <a href="#main"><li className="navbar-item"><img src="assets/icons/navBar/w-home.svg" alt="home icon"/>Home</li></a>
+          <a href="#education"><li className="navbar-item"><img src="assets/icons/navBar/Knowledge.svg" alt="home icon"/>Education</li></a>
+          <a href="#experience"><li className="navbar-item"><img src="assets/icons/navBar/Experience.svg" alt="home icon"/>Experience</li></a>
+          <a href="#contact"><li className="navbar-item"><img src="assets/icons/navBar/Contact.svg" alt="home icon"/>Contact</li></a>
+        </ul>
+        <a href="assets/CV/JuanIgnacioErrecartCV.pdf" download="Juan Ignacio Errecart CV"><button><img src="assets/icons/navBar/download.svg" alt="download icon" /> Download CV</button></a>
       </div>
-      <button className="changeLan">En</button>
     </div>
   );
 };
