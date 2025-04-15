@@ -2,21 +2,14 @@
     position: fixed;
     left: 0;
     height: 100svh;
-    width: 4%;
+    width: 4svw;
     background-color: var(--bg-100);
     display: flex;
     flex-direction:column;
     align-items: center;
-    align-content: center;
     justify-content: space-between;
     z-index: 30;
-    img{
-        color: var(--text-100);
-        cursor: pointer;
-        &:hover{
-            color: var(--primary-100);
-        }
-    }
+    padding: 1rem;
 }
 
 .sideBar-items{
@@ -24,6 +17,50 @@
     display: none;
 }
 
+.sideBar-item{
+    padding: 10px 0;
+    cursor: pointer;
+}
+
 .sideBar-options{
-    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    cursor: pointer;
+    a{
+        border-radius: 50rem;
+        padding: 10px 4px;
+        display: none;
+    }
+}
+
+@media (max-width: 940px){
+    .sideBar{
+        width: 8%;
+    }
+
+    .sideBar-items{
+        display: block;
+    }
+
+    .sideBar-options{
+        height: 200px;
+    }
+    .sideBar-options a{
+        display: block;
+    }
+}
+
+@media (max-width: 580px){
+
+    .sideBar-item:hover,
+    .sideBar-item.active{
+        width: 50px;
+        margin-right: -20px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background-color: var(--primary-100);
+    }
 }

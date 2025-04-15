@@ -20,12 +20,13 @@
   flex-direction: column;
   margin: 1.5rem;
   border: 1px solid var(--primary-300);
+  cursor: pointer;
 }
 
-.item-c img {
-  width: 40px;
-  height: 40px;
-  color: var(--accent-100);
+.item-c svg{
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 5px;
 }
 
 .item-c h4 {
@@ -76,6 +77,23 @@
   .item-c {
     width: 140px;
     height: 140px;
+    margin: .5rem;
+    a, span{
+      font-size: 12px;
+    }
+  }
+
+}
+
+@media (max-width: 580px) {
+  .item-c {
+    width: 120px;
+    height: 120px;
+    margin: .5rem;
+    svg{
+      width: 1.4rem;
+      height: 1.4rem;
+    }
     a, span{
       font-size: 12px;
     }

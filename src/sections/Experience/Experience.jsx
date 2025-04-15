@@ -14,21 +14,21 @@ const Experience = () => {
     },
     {
       id: 2,
-      title: "Visdan Agnecy",
-      image: "assets/image/VISDAN.png",
-      text: "Frontend developer position for a digital marketing studio, also developing the studio's website",
-      link:"https://www.visdan.agency",
-      categories: ["Next.js", "CSS", "JavaScript", "Figma", "Node.js"],
-      date: "2024 - Present",
-    },
-    {
-      id: 3,
       title: "PEPOLA",
       image: "assets/image/PEPOLA.jpg",
       text: "Creation of the page to video game studio",
       link:"https://pepola.in",
       categories: ["React", "CSS", "JavaScript"],
       date: "2024",
+    },
+    {
+      id: 3,
+      title: "Visdan Agency",
+      image: "assets/image/VISDAN.png",
+      text: "Frontend developer position for a digital marketing studio, also developing the studio's website",
+      link:"https://www.visdan.agency",
+      categories: ["Next.js", "CSS", "JavaScript", "Figma", "Node.js"],
+      date: "2024 - Present",
     },
   ];
 

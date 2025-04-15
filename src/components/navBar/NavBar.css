@@ -14,15 +14,10 @@
     background-color: var(--bg-100);
     button{
       margin-right: 2rem;
-      padding: 10px 30px;
+      padding: 10px 20px;
       display: flex;
+      align-items: center;
     }
-  }
-  img{
-    width: 20%;
-    height: 50%;
-    color:var(--text-100);
-    margin-inline:10px ;
   }
 }
 .navbar-items{
@@ -34,12 +29,11 @@
 .navbar-item{
   height: 60px;
   padding-inline: 2rem;
-  display: block;
-  align-content: center;
   cursor: pointer;
   color: var(--text-100);
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .navbar-item:hover,
@@ -50,6 +44,12 @@
   border-top-left-radius: 16px;
   background-color: var(--primary-100);
   font-weight: 800;
+}
+
+@media (max-width: 940px){
+  .navBar{
+    display: none;
+  }
 }
 
 /* 876 */
